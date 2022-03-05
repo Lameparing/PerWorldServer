@@ -68,7 +68,7 @@ public class PerWorldServer extends JavaPlugin {
         switch (updateChecker.check()) {
             case OUT_OF_DATE:
                 sender.sendMessage(
-                        StringUtil.color("&r[PerWorldServer] An update for &3PerWorldServer (" + updateChecker.getNewVersion() + ") &rwas found. Please update at: "));
+                        StringUtil.color("&r[PerWorldServer] An update for &3PerWorldServer (" + updateChecker.getNewVersion() + ") &rwas found. Please update at: https://www.spigotmc.org/resources/23989/"));
                 break;
             case UP_TO_DATE:
                 sender.sendMessage(
