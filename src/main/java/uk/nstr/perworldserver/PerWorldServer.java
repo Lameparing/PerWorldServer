@@ -41,6 +41,7 @@ public class PerWorldServer extends JavaPlugin {
             case "1_8":
                 this.cloakUtil = new CloakUtil_1_9_R1(this);
                 break;
+            case "1_18":
             case "1_16":
             case "1_15":
             case "1_14":
@@ -48,7 +49,7 @@ public class PerWorldServer extends JavaPlugin {
             case "1_12":
             case "1_11":
             case "1_10":
-                this.cloakUtil = new CloakUtil_1_16_R1(this);
+                this.cloakUtil = new CloakUtil_1_18_R1(this);
                 break;
             default:
                 sender.sendMessage(StringUtil.color("&r[PerWorldServer] &cYou have an unsupported version of CraftBukkit, try updating."));
@@ -67,7 +68,7 @@ public class PerWorldServer extends JavaPlugin {
         switch (updateChecker.check()) {
             case OUT_OF_DATE:
                 sender.sendMessage(
-                        StringUtil.color("&r[PerWorldServer] An update for &3PerWorldServer (" + updateChecker.getNewVersion() + ") &rwas found. Please update at: https://www.spigotmc.org/resources/23989/"));
+                        StringUtil.color("&r[PerWorldServer] An update for &3PerWorldServer (" + updateChecker.getNewVersion() + ") &rwas found. Please update at: "));
                 break;
             case UP_TO_DATE:
                 sender.sendMessage(
